@@ -15,8 +15,8 @@ export default function Header() {
       <div className="flex items-center gap-4">
         <DarkModeSwitch />
         <Link href='/' className="flex gap-1 items-center">
-          <span className="text-2xl from-bold bg-amber-500 py-1 px-2 rounded-lg">TopMovies</span>
-          <span className="text-xl hidden sm:inline">TopMovies22</span>
+          <span className="text-2xl from-bold bg-red-700 py-1 px-2 rounded-lg text-white">TopMovies</span>
+          {/* <span className="text-xl hidden sm:inline">TopMovies22</span> */}
         </Link>
       </div>
 
