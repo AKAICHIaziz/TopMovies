@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, Suspense } from "react"
 
 export default function Error({ error, reset }) {
 
@@ -9,9 +9,11 @@ export default function Error({ error, reset }) {
     }, [error])
 
     return (
-        <div className="text-center mt-10">
-            <h1>Something went wrong, please try again.</h1>
-            <button className="hover:text-amber-800" onClick={() => reset()}>Go back</button>
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+            <div className="text-center mt-10">
+                <h1>Something went wrong, please try again.</h1>
+                <button className="hover:text-amber-800" onClick={() => reset()}>Go back</button>
+            </div>
+        </Suspense>
     )
 }
