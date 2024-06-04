@@ -13,7 +13,7 @@ export default async function Home({ searchParams }) {
       resolve(response)
     }, 1000)
   })
-  const data = await res.json()
+  const data = await res.json() 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
