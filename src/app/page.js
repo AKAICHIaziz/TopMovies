@@ -1,5 +1,4 @@
 import Result from "@/components/Result"
-import { resolve } from "styled-jsx/css"
 
 const API_KEY = process.env.API_KEY
 
